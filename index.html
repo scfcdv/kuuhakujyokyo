@@ -1,0 +1,15 @@
+<head>
+<title>空白除去</title>
+<link rel="icon" href="https://homeweb2-rmir.vercel.app/favicon.ico">
+<script>
+function removeSpaces() {
+var inputText = document.getElementById("inputText").value;
+var resultText = inputText.replace(/\s+/g, "");
+document.getElementById("result").textContent = resultText;}
+</script>
+</head>
+<body>
+<input type="text" id="inputText" placeholder="テキストを入力してください">
+<button onclick="removeSpaces()">空白を除去</button>
+<p><span id="result"></span></p>
+</body>
